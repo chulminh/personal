@@ -1,31 +1,32 @@
+//find all the classes "giveup" 
 var giveUp = document.querySelectorAll(".giveup");
-console.log(giveUp);
-
+//create array where all the values will be gathered
 const counter = [];
 
+//for every individual tag within the "giveup" class, change from string to number then push to array
 for (var gives of giveUp) {
     var num = parseInt(gives.innerText, 10)
     counter.push(num);
-
-    console.log(num);
-    
 }
 
+//reduce individual values in counter to 1 single value
 var total = counter.reduce((a, b) => a + b, 0)
 
-console.log(total);
-
-document.getElementById("counter").innerText = total;
-//var testtest = document.getElementById("test").innerText;
-//console.log(testtest);
-//var test2 = parseInt(testtest, 10)
-//console.log(test2);
+//if total is less than 10, concatenate two 0's so it looks like 00X
+//if total is less than 100, concatenate one 0 so it looks like 0XX
+//display total value in "counter" id
 
 
+//0 as a string to concatenate or something
+const zero = "0";
 
-//add up all instances of give up and display it elsewhere
+//if total is less than 10, add two 0s, if its less than 100, add one 0, otherwise display as it is
+if (total < 10) {
+    document.getElementById("counter").innerText = zero + zero + total;
+} else if (total < 100) {
+    document.getElementById("counter").innerText = zero + total;
+} else {
+    document.getElementById("counter").innerText = total;
+}
 
-//find every instance of a specific class
-//push those values to an array
-//all add the values in the array
-//display that value elsewhere
+
