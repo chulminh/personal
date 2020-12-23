@@ -1,0 +1,77 @@
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+.name {
+  display: block;
+  width: 100px;
+  margin: 30px auto;
+}
+
+.site_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 600px;
+  margin: 20px auto;
+}
+
+.site_nav div {
+  margin: 5px;
+}
+
+.site_nav h3 {
+  font-weight: 400;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 600px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title #counter {
+  font-size: 8em;
+  color: white;
+  display: block;
+  background-color: black;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
+.title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3em;
+  width: 300px;
+  margin: 0;
+}
+
+.desk_logo {
+  display: block;
+  width: 120px;
+}
+
+.journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.journal h1 {
+  font-size: 5em;
+  font-weight: 200;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
