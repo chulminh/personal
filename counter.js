@@ -21,7 +21,9 @@ var total = counter.reduce((a, b) => a + b, 0)
 const zero = "0";
 
 //if total is less than 10, add two 0s, if its less than 100, add one 0, otherwise display as it is
-if (total < 10) {
+if (total = 0) {
+    document.getElementById("counter").innerText = zero + zero + zero;
+} else if (total < 10) {
     document.getElementById("counter").innerText = zero + zero + total;
 } else if (total < 100) {
     document.getElementById("counter").innerText = zero + total;
