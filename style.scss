@@ -27,11 +27,16 @@ body {
     }
 }
 
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .title {
     display:flex;
     justify-content: space-around;
     width: 600px;
-    flex-wrap: wrap;
 
     #counter {
         font-size: 150px;
@@ -40,6 +45,7 @@ body {
         background-color: black;
         border-radius: 5px;
         width: 320px;
+        height: 180px;
         text-align: center;
         }
     
@@ -51,19 +57,32 @@ body {
     }
 }
 
-.desk_logo {
-    display:block;
-    width: 120px;
-}
-
 .journal {
-    display: flex;
-    margin: 0 auto;
+    display: block;
     padding: 0;
+    width: 400px;
+    text-align: center;
+    
+    div {
+        display: flex;
+    }
 
     h1 {
-        font-size: 5em;
+        font-size: 56px;
         font-weight: 200;
         margin: 0;
     }
+
+    h2 {
+        font-size: 48px;
+        font-weight: 200;
+        width: 300px;
+    }
+
+    .desk_logo {
+        display:block;
+        width: 110px;
+    }
 }
+
+
