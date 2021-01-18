@@ -21,9 +21,7 @@ var total = counter.reduce((a, b) => a + b, 0)
 const zero = "0";
 
 //if total is 0, display three 0s, if less than 10, add two 0s, if less than 100, add one 0, otherwise display as it is
-if (total = 0) {
-    document.getElementById("counter").innerText = zero + zero + zero;
-} else if (total < 10) {
+if (total < 10) {
     document.getElementById("counter").innerText = zero + zero + total;
 } else if (total < 100) {
     document.getElementById("counter").innerText = zero + total;
@@ -32,3 +30,6 @@ if (total = 0) {
 }
 
 
+
+
+// if you want to add an entry of how many times you've wanted to give up, simply create a tag with the class "giveup" and put a number in it
